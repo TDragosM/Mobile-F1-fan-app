@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bckg"
+    tools:context=".DriversActivity">
+
+
+    <!-- Driver Name and Championship Standing -->
+    <LinearLayout
+        android:id="@+id/driverLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal">
+
+        <!-- Driver Picture -->
+        <ImageView
+            android:id="@+id/driverPicture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop" />
+
+        <!-- Driver Name -->
+        <TextView
+            android:id="@+id/driverName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <!-- Championship Standing and Points -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/championshipStandingLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Championship Standing"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/championshipStanding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/championshipPointsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Points"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/championshipPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Season Statistics -->
+    <LinearLayout
+        android:id="@+id/seasonStatsLayout"
+        android:layout_width="395dp"
+        android:layout_height="533dp"
+        android:layout_below="@id/driverLayout"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Left Column (Season Stats) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Podiums -->
+            <TextView
+                android:id="@+id/podiumsLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Podiums:"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/podiums"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <!-- Fastest Laps -->
+            <TextView
+                android:id="@+id/fastestLapsLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fastest Laps:"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fastestLaps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <!-- GPs Entered -->
+
+            <TextView
+                android:id="@+id/gpsEnteredLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GPs Entered:"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/gpsEntered"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/teamLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team:"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/team"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <!-- World Championships -->
+            <TextView
+                android:id="@+id/worldChampionshipsLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="World Championships:"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/worldChampionships"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+
+        <!-- Right Column (All-Time Stats) -->
+        <LinearLayout
+            android:layout_width="22dp"
+            android:layout_height="501dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical"> <!-- added layout_gravity -->
+
+            <!-- All-Time Stats -->
+
+            <!-- All-Time Podiums -->
+            <TextView
+                android:id="@+id/allTimePodiumsLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All-Time Podiums:"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/allTimePodiums"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <!-- All-Time Fastest Laps -->
+            <TextView
+                android:id="@+id/allTimeFastestLapsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All-Time Fastest Laps:"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/allTimeFastestLaps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <!-- All-Time GPs Entered -->
+
+            <TextView
+                android:id="@+id/allTimeGpsEnteredLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All-Time GPs Entered:"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/allTimeGpsEntered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+            <!-- Country -->
+            <TextView
+                android:id="@+id/countryLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Country:"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <!-- Place of Birth -->
+            <TextView
+                android:id="@+id/placeOfBirthLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Place of Birth:"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/placeOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <!-- Date of Birth -->
+            <TextView
+                android:id="@+id/dateOfBirthLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth:"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/dateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

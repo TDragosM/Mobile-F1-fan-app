@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bckg"
+    tools:context=".TeamActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Team Name -->
+
+        <ImageView
+            android:id="@+id/teamLogo"
+            android:layout_width="224dp"
+            android:layout_height="95dp"
+            android:layout_above="@+id/powerUnit"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="33dp"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:id="@+id/teamName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Team Points -->
+        <TextView
+            android:id="@+id/teamPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team Points:"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/teamName"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Team Driver 1 -->
+        <TextView
+            android:id="@+id/teamDriver1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver 1:"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/teamPoints"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Team Driver 2 -->
+        <TextView
+            android:id="@+id/teamDriver2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver 2:"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/teamDriver1"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Highest Finish (All Time) -->
+        <TextView
+            android:id="@+id/highestFinishAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Highest Finish (All Time):"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/teamDriver2"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Highest Finish (Current season) -->
+        <TextView
+            android:id="@+id/highestFinishNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Highest Finish (Current season):"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/highestFinishAll"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Poles (Current season) -->
+        <TextView
+            android:id="@+id/polesNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Poles (Current season):"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/highestFinishNow"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Poles (All Time) -->
+        <TextView
+            android:id="@+id/polesAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Poles (All Time):"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/polesNow"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Fastest Laps (Current season) -->
+        <TextView
+            android:id="@+id/fastLapNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fastest Laps (Current season):"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/polesAll"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Fastest Laps (All Time) -->
+        <TextView
+            android:id="@+id/fastLapAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fastest Laps (All Time):"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/fastLapNow"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Championships -->
+        <TextView
+            android:id="@+id/championships"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Championships:"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/fastLapAll"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Base -->
+        <TextView
+            android:id="@+id/base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Base:"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/championships"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Chief -->
+        <TextView
+            android:id="@+id/chief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chief:"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/base"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Chassis -->
+        <TextView
+            android:id="@+id/chassis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chassis:"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/chief"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Power Unit -->
+        <TextView
+            android:id="@+id/powerUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Power Unit:"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/chassis"
+            android:layout_marginBottom="8dp" />
+
+    </RelativeLayout>
+</ScrollView>

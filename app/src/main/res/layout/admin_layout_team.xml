@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bckg"
+    tools:context=".TeamActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Team Name -->
+
+        <ImageView
+            android:id="@+id/teamLogo"
+            android:layout_width="224dp"
+            android:layout_height="95dp"
+            android:layout_above="@+id/powerUnit"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="33dp"
+            android:layout_marginBottom="2dp" />
+
+        <EditText
+            android:id="@+id/teamName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"
+            android:background="@null" />
+
+        <!-- Team Points -->
+        <EditText
+            android:id="@+id/teamPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/teamName"
+            android:layout_marginBottom="8dp"
+            android:background="@null" />
+
+        <!-- Team Driver 1 -->
+        <EditText
+            android:id="@+id/teamDriver1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/teamPoints"
+            android:layout_marginBottom="8dp"
+            android:background="@null" />
+
+        <!-- Team Driver 2 -->
+        <EditText
+            android:id="@+id/teamDriver2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/teamDriver1"
+            android:layout_marginBottom="8dp"
+            android:background="@null" />
+
+        <!-- Highest Finish (All Time) -->
+        <EditText
+            android:id="@+id/highestFinishAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/teamDriver2"
+            android:layout_marginBottom="8dp"
+            android:background="@null" />
+
+        <!-- Highest Finish (Current season) -->
+        <EditText
+            android:id="@+id/highestFinishNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/highestFinishAll"
+            android:layout_marginBottom="8dp"
+            android:background="@null" />
+
+        <!-- Poles (Current season) -->
+        <EditText
+            android:id="@+id/polesNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/highestFinishNow"
+            android:layout_marginBottom="8dp"
+            android:background="@null" />
+
+        <!-- Poles (All Time) -->
+        <EditText
+            android:id="@+id/polesAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/polesNow"
+            android:layout_marginBottom="8dp"
+            android:background="@null" />
+
+        <!-- Fastest Laps (Current season) -->
+        <EditText
+            android:id="@+id/fastLapNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/polesAll"
+            android:layout_marginBottom="8dp"
+            android:background="@null" />
+
+        <!-- Fastest Laps (All Time) -->
+        <EditText
+            android:id="@+id/fastLapAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/fastLapNow"
+            android:layout_marginBottom="8dp"
+            android:background="@null" />
+
+        <!-- Championships -->
+        <EditText
+            android:id="@+id/championships"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/fastLapAll"
+            android:layout_marginBottom="8dp"
+            android:background="@null" />
+
+        <!-- Base -->
+        <EditText
+            android:id="@+id/base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/championships"
+            android:layout_marginBottom="8dp"
+            android:background="@null" />
+
+        <!-- Chief -->
+        <EditText
+            android:id="@+id/chief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/base"
+            android:layout_marginBottom="8dp"
+            android:background="@null" />
+
+        <!-- Chassis -->
+        <EditText
+            android:id="@+id/chassis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/chief"
+            android:layout_marginBottom="8dp"
+            android:background="@null" />
+
+        <!-- Power Unit -->
+        <EditText
+            android:id="@+id/powerUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/chassis"
+            android:layout_marginBottom="8dp"
+            android:background="@null" />
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Changes"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:onClick="saveChanges2"/>
+
+    </RelativeLayout>
+</ScrollView>
